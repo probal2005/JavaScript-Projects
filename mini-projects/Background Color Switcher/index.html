@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BG Color Switch</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+
+    <div class="main-content">
+        <button>Switch Color</button>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>
+            Designed with
+            <i class="fa-solid fa-heart"></i>
+            by
+            <a href="https://github.com/probal2005" target="_blank">
+                Probal Dhali
+            </a>
+        </p>
+    </footer>
+
+    <script>
+        const colors = [
+            "#40E0D0",
+            "#FF7F50",
+            "#6495ED",
+            "#FFBF00",
+            "#DE3163",
+            "#FFA600",
+            "#B200FF",
+            "#FF005D",
+            "#5694EE",
+            "#72E824"
+        ];
+
+        let i = 0;
+
+        document.querySelector("button").addEventListener("click", () => {
+            document.body.style.backgroundColor = colors[i];
+            i = (i + 1) % colors.length;
+        });
+    </script>
+
+</body>
+</html>

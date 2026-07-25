@@ -1,0 +1,280 @@
+/* ==============================
+   Google Font
+============================== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* ==============================
+   Reset
+============================== */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+/* ==============================
+   Body
+============================== */
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(-45deg,#ff512f,#dd2476,#6a11cb,#2575fc);
+    background-size:400% 400%;
+    animation:gradient 12s ease infinite;
+    overflow:hidden;
+}
+
+/* Animated Background */
+
+@keyframes gradient{
+    0%{
+        background-position:0% 50%;
+    }
+    50%{
+        background-position:100% 50%;
+    }
+    100%{
+        background-position:0% 50%;
+    }
+}
+
+/* ==============================
+   Container
+============================== */
+
+.container{
+    width:90%;
+    max-width:500px;
+    padding:40px;
+    text-align:center;
+
+    background:rgba(255,255,255,.12);
+
+    border:1px solid rgba(255,255,255,.2);
+
+    border-radius:25px;
+
+    backdrop-filter:blur(18px);
+
+    box-shadow:
+    0 8px 32px rgba(0,0,0,.3);
+}
+
+/* ==============================
+   Heading
+============================== */
+
+h1{
+    color:#fff;
+    font-size:2rem;
+    margin-bottom:30px;
+}
+
+/* ==============================
+   Emoji
+============================== */
+
+.emoji{
+
+    font-size:11rem;
+
+    cursor:pointer;
+
+    user-select:none;
+
+    transition:.4s;
+
+    filter:drop-shadow(0 0 25px #fff);
+
+}
+
+.emoji:hover{
+
+    transform:scale(1.12) rotate(8deg);
+
+}
+
+.animate{
+
+    animation:pop .45s ease;
+
+}
+
+/* Pop Animation */
+
+@keyframes pop{
+
+    0%{
+
+        transform:scale(.3) rotate(-20deg);
+
+        opacity:0;
+
+    }
+
+    50%{
+
+        transform:scale(1.3) rotate(12deg);
+
+    }
+
+    100%{
+
+        transform:scale(1);
+
+        opacity:1;
+
+    }
+
+}
+
+/* ==============================
+   Button
+============================== */
+
+button{
+
+    margin-top:25px;
+
+    padding:14px 30px;
+
+    border:none;
+
+    border-radius:50px;
+
+    font-size:17px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    color:#fff;
+
+    background:#111;
+
+    transition:.3s;
+
+}
+
+button:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:
+    0 0 15px cyan,
+    0 0 30px cyan;
+
+}
+
+/* ==============================
+   Info
+============================== */
+
+.info{
+
+    color:#fff;
+
+    margin-top:20px;
+
+    font-size:15px;
+
+}
+
+.info span{
+
+    color:#00ffff;
+
+    font-weight:bold;
+
+}
+
+/* ==============================
+   Footer
+============================== */
+
+footer{
+
+    position:fixed;
+
+    bottom:20px;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    width:100%;
+
+    text-align:center;
+
+    color:#fff;
+
+    font-size:15px;
+
+    letter-spacing:1px;
+
+}
+
+footer p{
+
+    margin:0;
+
+}
+
+footer a{
+
+    color:#00ffff;
+
+    text-decoration:none;
+
+    font-weight:bold;
+
+    transition:.3s;
+
+}
+
+footer a:hover{
+
+    color:#ff00ff;
+
+    text-shadow:
+    0 0 5px #fff,
+    0 0 10px #00ffff,
+    0 0 20px #00ffff,
+    0 0 40px #00ffff;
+
+}
+
+/* ==============================
+   Responsive
+============================== */
+
+@media(max-width:600px){
+
+    h1{
+
+        font-size:1.6rem;
+
+    }
+
+    .emoji{
+
+        font-size:8rem;
+
+    }
+
+    button{
+
+        width:100%;
+
+    }
+
+    footer{
+
+        font-size:13px;
+
+    }
+
+}
