@@ -1,72 +1,97 @@
 [
   {
-    "name": "WeKeep Notes",
-    "desc": "We keep notes saver. Stores Notes in LocalStorage. TailwindCSS",
-    "meta": "wekeep"
+    "name": "Student Grade Calculator",
+    "desc": "Percentage and grade calculator based on the marks entered by the user.",
+    "meta": "studentgradecalculator"
   },
   {
-    "name": "Songify Music Player",
-    "desc": "Music Player with play, pause, playlist and all major features. SASS/SCSS",
-    "meta": "songify"
+    "name": "Advanced Age Calculator",
+    "desc": "Calculates age in years, months, and days based on the user's birth date.",
+    "meta": "advancedagecalculator"
   },
   {
-    "name": "Quiz Web App",
-    "desc": "Simple quiz application. tailwindCSS framework.",
-    "meta": "quizapp"
+    "name": "Issue Tracker Pro",
+    "desc": "A simple issue tracking application built with JavaScript and Bootstrap.",
+    "meta": "issuetrackerpro"
   },
   {
-    "name": "Temperature Converter",
-    "desc": "Temperature converter celsius to kelvin and fahrenhiet live.",
-    "meta": "tempconvert"
+    "name": "Modern Calculator",
+    "desc": "A modern-looking calculator built with HTML, CSS, and JavaScript.",
+    "meta": "moderncalculator"
   },
   {
-    "name": "Words Counter",
-    "desc": "Words and character counter. Live Counter JavaScript Project.",
-    "meta": "wordcount"
+    "name": "Modern Scientific Calculator",
+    "desc": "A modern scientific calculator with advanced mathematical operations.",
+    "meta": "scientificcalculator"
   },
   {
-    "name": "Simple Stopwatch",
-    "desc": "Simple stopwatch with start, stop and reset features.",
-    "meta": "stopwatch"
+    "name": "Modern Stopwatch",
+    "desc": "A modern stopwatch application built with HTML, CSS, and JavaScript.",
+    "meta": "modernstopwatch"
   },
   {
-    "name": "Basic Percentage Calc",
-    "desc": "Percentage And Grade Calculator Based On The Marks Enter By The User.",
-    "meta": "percentcalc"
+    "name": "Modern Todo App",
+    "desc": "A modern todo application with task management features.",
+    "meta": "moderntodo"
   },
   {
-    "name": "Simple Calculator",
-    "desc": "Simple Operations Calculator Based On The Two User Inputs.",
-    "meta": "twonumcalc"
+    "name": "Multi Temperature Converter",
+    "desc": "Converts temperature between Celsius, Fahrenheit, and Kelvin.",
+    "meta": "temperatureconverter"
   },
   {
-    "name": "Todo List",
-    "desc": "Simple Todo List Webapp With Modern UI And Glassmorphism.",
-    "meta": "todo"
+    "name": "Neumorphism Analog Clock",
+    "desc": "A modern analog clock with a neumorphic design built using JavaScript.",
+    "meta": "neumorphismclock"
   },
   {
-    "name": "Age Calculator",
-    "desc": "Calculates The Age Of The User. Wishes Too On Birthday.",
-    "meta": "agecalc"
+    "name": "Modern Notes App",
+    "desc": "A modern notes application built with HTML, CSS, and JavaScript.",
+    "meta": "modernnotes"
   },
   {
     "name": "Password Generator",
-    "desc": "A Basic Password Generator As Per The User Selected Criteria.",
-    "meta": "pwdgen"
+    "desc": "Generates secure random passwords with customizable options.",
+    "meta": "passwordgenerator"
   },
   {
-    "name": "Issue Tracker",
-    "desc": "Assign Issue With The Auto Generated Id By Using ChanceJS. Uses LocalStorage.",
-    "meta": "issuetracker"
+    "name": "Songify Music Player",
+    "desc": "A modern music player with play, pause, playlist, and music controls.",
+    "meta": "songify"
   },
   {
-    "name": "Simple Calculator",
-    "desc": "A Simple Caculator Built Using JQuery.",
-    "meta": "basic-calc"
+    "name": "Ultimate Quiz App",
+    "desc": "A comprehensive quiz application built with HTML, CSS, and JavaScript.",
+    "meta": "ultimatequiz"
   },
   {
-    "name": "Neomorphism Clock",
-    "desc": "Basic Neomorphism Clock With Hour, Min, Sec With Light And Dark Mode. Tilt Effect.",
-    "meta": "neoclock"
+    "name": "Word & Character Counter",
+    "desc": "Counts words, characters, and sentences from user input text.",
+    "meta": "wordcounter"
+  },
+  {
+    "name": "Digital Clock",
+    "desc": "Displays live time with hours, minutes, seconds, and modern effects.",
+    "meta": "digitalclock"
+  },
+  {
+    "name": "Advanced Counter App",
+    "desc": "A counter application with increment and decrement functionality.",
+    "meta": "counterapp"
+  },
+  {
+    "name": "Background Color Switcher",
+    "desc": "Changes background colors dynamically using JavaScript.",
+    "meta": "colorswitcher"
+  },
+  {
+    "name": "Random Emoji Generator",
+    "desc": "Generates random emojis with a single click.",
+    "meta": "emojigenerator"
+  },
+  {
+    "name": "Country Search App",
+    "desc": "A country search application using Rest Countries API.",
+    "meta": "countrylookup"
   }
 ]
