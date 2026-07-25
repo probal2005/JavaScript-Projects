@@ -1,0 +1,997 @@
+/* ==========================================
+   Issue Tracker Pro
+   Created by Probal Dhali
+========================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root{
+
+    --primary:#4f46e5;
+    --secondary:#06b6d4;
+    --success:#22c55e;
+    --danger:#ef4444;
+    --warning:#f59e0b;
+    --dark:#0f172a;
+    --card:rgba(255,255,255,.10);
+    --border:rgba(255,255,255,.18);
+    --text:#ffffff;
+
+}
+
+*{
+
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+
+}
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+body{
+
+    min-height:100vh;
+
+    background:linear-gradient(
+        -45deg,
+        #4f46e5,
+        #06b6d4,
+        #9333ea,
+        #0f172a
+    );
+
+    background-size:400% 400%;
+
+    animation:bgMove 15s ease infinite;
+
+    color:var(--text);
+
+    overflow-x:hidden;
+
+}
+
+@keyframes bgMove{
+
+0%{
+
+background-position:0% 50%;
+
+}
+
+50%{
+
+background-position:100% 50%;
+
+}
+
+100%{
+
+background-position:0% 50%;
+
+}
+
+}
+
+/* =========================
+Animated Background
+========================= */
+
+.bg-animation{
+
+position:fixed;
+
+inset:0;
+
+z-index:-1;
+
+overflow:hidden;
+
+}
+
+.bg-animation span{
+
+position:absolute;
+
+display:block;
+
+border-radius:50%;
+
+filter:blur(80px);
+
+opacity:.25;
+
+animation:float 18s linear infinite;
+
+}
+
+.bg-animation span:nth-child(1){
+
+width:250px;
+height:250px;
+background:#38bdf8;
+top:10%;
+left:5%;
+
+}
+
+.bg-animation span:nth-child(2){
+
+width:320px;
+height:320px;
+background:#8b5cf6;
+right:5%;
+top:15%;
+
+}
+
+.bg-animation span:nth-child(3){
+
+width:220px;
+height:220px;
+background:#22c55e;
+left:20%;
+bottom:10%;
+
+}
+
+.bg-animation span:nth-child(4){
+
+width:260px;
+height:260px;
+background:#f43f5e;
+right:15%;
+bottom:5%;
+
+}
+
+@keyframes float{
+
+0%{
+
+transform:translateY(0) rotate(0deg);
+
+}
+
+50%{
+
+transform:translateY(-35px) rotate(180deg);
+
+}
+
+100%{
+
+transform:translateY(0) rotate(360deg);
+
+}
+
+}
+
+/* =========================
+Glass Effect
+========================= */
+
+.glass{
+
+background:var(--card);
+
+backdrop-filter:blur(18px);
+
+border:1px solid var(--border);
+
+border-radius:20px;
+
+box-shadow:0 20px 40px rgba(0,0,0,.25);
+
+}
+
+/* =========================
+Navbar
+========================= */
+
+.navbar{
+
+margin:20px auto;
+
+padding:18px 30px;
+
+width:min(1200px,95%);
+
+}
+
+.navbar .container{
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+}
+
+.navbar h2{
+
+font-size:30px;
+
+font-weight:700;
+
+margin:0;
+
+}
+
+.navbar i{
+
+color:#38bdf8;
+
+margin-right:10px;
+
+}
+
+#themeBtn{
+
+width:55px;
+
+height:55px;
+
+border:none;
+
+border-radius:50%;
+
+background:rgba(255,255,255,.12);
+
+color:white;
+
+font-size:20px;
+
+cursor:pointer;
+
+transition:.3s;
+
+}
+
+#themeBtn:hover{
+
+transform:rotate(180deg);
+
+background:#4f46e5;
+
+}
+
+/* =========================
+Dashboard
+========================= */
+
+.dashboard-card{
+
+padding:25px;
+
+text-align:center;
+
+border:none;
+
+background:rgba(255,255,255,.10);
+
+backdrop-filter:blur(15px);
+
+border-radius:20px;
+
+color:white;
+
+transition:.35s;
+
+}
+
+.dashboard-card:hover{
+
+transform:translateY(-8px);
+
+box-shadow:0 20px 35px rgba(0,0,0,.35);
+
+}
+
+.dashboard-card h5{
+
+font-size:18px;
+
+margin-bottom:15px;
+
+}
+
+.dashboard-card h2{
+
+font-size:42px;
+
+font-weight:700;
+
+}
+
+.dashboard-card.open{
+
+border-left:5px solid var(--success);
+
+}
+
+.dashboard-card.closed{
+
+border-left:5px solid var(--danger);
+
+}
+
+/* =========================
+Form
+========================= */
+
+.form-box{
+
+padding:30px;
+
+}
+
+.form-box h3{
+
+margin-bottom:25px;
+
+font-weight:600;
+
+}
+
+.form-control,
+.form-select{
+
+background:rgba(255,255,255,.08);
+
+border:1px solid rgba(255,255,255,.15);
+
+color:white;
+
+padding:14px;
+
+border-radius:12px;
+
+}
+
+.form-control::placeholder{
+
+color:#d1d5db;
+
+}
+
+.form-control:focus,
+.form-select:focus{
+
+box-shadow:none;
+
+border-color:#38bdf8;
+
+background:rgba(255,255,255,.12);
+
+color:white;
+
+}
+
+.btn{
+
+padding:12px;
+
+font-weight:600;
+
+border-radius:12px;
+
+transition:.3s;
+
+}
+
+.btn:hover{
+
+transform:translateY(-3px);
+
+}
+
+/* =========================
+Issue Panel
+========================= */
+
+.issue-panel{
+
+padding:25px;
+
+min-height:500px;
+
+}
+
+.toolbar{
+
+display:flex;
+
+gap:15px;
+
+margin-bottom:20px;
+
+}
+
+.toolbar input,
+.toolbar select{
+
+flex:1;
+
+padding:12px;
+
+border:none;
+
+outline:none;
+
+border-radius:10px;
+
+background:rgba(255,255,255,.08);
+
+color:white;
+
+}
+
+/* ==========================================
+   PART 2
+   Issue Cards + Footer + Responsive
+========================================== */
+
+/* =========================
+Issue Card
+========================= */
+
+.issue-card{
+
+    background:rgba(255,255,255,.10);
+
+    backdrop-filter:blur(15px);
+
+    border:1px solid rgba(255,255,255,.15);
+
+    border-radius:18px;
+
+    padding:20px;
+
+    margin-bottom:20px;
+
+    transition:.35s;
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.issue-card:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:0 18px 35px rgba(0,0,0,.35);
+
+}
+
+.issue-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:0;
+
+    width:6px;
+
+    height:100%;
+
+    background:#4f46e5;
+
+}
+
+/* =========================
+Issue Header
+========================= */
+
+.issue-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:15px;
+
+}
+
+.issue-id{
+
+    font-size:13px;
+
+    opacity:.8;
+
+    word-break:break-all;
+
+}
+
+.issue-title{
+
+    font-size:22px;
+
+    font-weight:600;
+
+    margin:12px 0;
+
+    color:#fff;
+
+}
+
+.issue-info{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:15px;
+
+    margin:15px 0;
+
+}
+
+.issue-info span{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:6px;
+
+    font-size:14px;
+
+}
+
+/* =========================
+Badges
+========================= */
+
+.badge{
+
+    padding:8px 15px;
+
+    border-radius:50px;
+
+    font-size:13px;
+
+    font-weight:600;
+
+}
+
+.badge-open{
+
+    background:#22c55e;
+
+    color:#fff;
+
+}
+
+.badge-closed{
+
+    background:#ef4444;
+
+    color:#fff;
+
+}
+
+.badge-low{
+
+    background:#3b82f6;
+
+    color:#fff;
+
+}
+
+.badge-medium{
+
+    background:#f59e0b;
+
+    color:#fff;
+
+}
+
+.badge-high{
+
+    background:#dc2626;
+
+    color:#fff;
+
+}
+
+/* =========================
+Buttons
+========================= */
+
+.action-buttons{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:10px;
+
+    margin-top:20px;
+
+}
+
+.action-buttons button{
+
+    border:none;
+
+    padding:10px 18px;
+
+    border-radius:10px;
+
+    color:#fff;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.btn-close{
+
+    background:#16a34a;
+
+}
+
+.btn-delete{
+
+    background:#dc2626;
+
+}
+
+.btn-edit{
+
+    background:#2563eb;
+
+}
+
+.action-buttons button:hover{
+
+    transform:translateY(-3px);
+
+    filter:brightness(1.1);
+
+}
+
+/* =========================
+Scroll Button
+========================= */
+
+#scrollTop{
+
+    position:fixed;
+
+    right:25px;
+
+    bottom:30px;
+
+    width:55px;
+
+    height:55px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:#4f46e5;
+
+    color:#fff;
+
+    cursor:pointer;
+
+    font-size:20px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    box-shadow:0 12px 25px rgba(0,0,0,.35);
+
+    transition:.3s;
+
+}
+
+#scrollTop:hover{
+
+    transform:translateY(-5px);
+
+    background:#06b6d4;
+
+}
+
+/* =========================
+Footer
+========================= */
+
+footer{
+
+    margin-top:60px;
+
+    width:100%;
+
+    background:rgba(255,255,255,.08);
+
+    backdrop-filter:blur(18px);
+
+    border-top:1px solid rgba(255,255,255,.15);
+
+    padding:25px;
+
+    text-align:center;
+
+}
+
+footer p{
+
+    color:#fff;
+
+    margin:6px 0;
+
+    font-size:15px;
+
+}
+
+footer a{
+
+    color:#38bdf8;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+}
+
+footer a:hover{
+
+    color:#fff;
+
+}
+
+/* =========================
+Scrollbar
+========================= */
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#111827;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#4f46e5;
+
+    border-radius:20px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:#06b6d4;
+
+}
+
+/* =========================
+Animations
+========================= */
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(20px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+.issue-card{
+
+    animation:fadeUp .5s ease;
+
+}
+
+/* =========================
+Responsive
+========================= */
+
+@media(max-width:992px){
+
+.toolbar{
+
+flex-direction:column;
+
+}
+
+.issue-header{
+
+flex-direction:column;
+
+align-items:flex-start;
+
+gap:10px;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.navbar h2{
+
+font-size:22px;
+
+}
+
+.dashboard-card h2{
+
+font-size:30px;
+
+}
+
+.form-box,
+
+.issue-panel{
+
+padding:20px;
+
+}
+
+.action-buttons{
+
+flex-direction:column;
+
+}
+
+.action-buttons button{
+
+width:100%;
+
+}
+
+}
+
+@media(max-width:576px){
+
+body{
+
+font-size:14px;
+
+}
+
+.issue-title{
+
+font-size:18px;
+
+}
+
+.toolbar input,
+
+.toolbar select{
+
+width:100%;
+
+}
+
+#scrollTop{
+
+width:48px;
+
+height:48px;
+
+font-size:18px;
+
+right:15px;
+
+bottom:15px;
+
+}
+
+footer{
+
+padding:18px;
+
+}
+
+}
+
+/* Toolbar Buttons */
+
+.toolbar-btn{
+
+    background:#4f46e5;
+
+    color:white;
+
+    border:none;
+
+    padding:12px 18px;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+    white-space:nowrap;
+
+    font-weight:600;
+
+}
+
+.toolbar-btn:hover{
+
+    background:#06b6d4;
+
+    transform:translateY(-3px);
+
+}
+
+/* Toast */
+
+.toast-message{
+
+    position:fixed;
+
+    top:30px;
+
+    right:30px;
+
+    padding:15px 25px;
+
+    color:#fff;
+
+    border-radius:10px;
+
+    box-shadow:0 15px 30px rgba(0,0,0,.3);
+
+    transform:translateX(120%);
+
+    opacity:0;
+
+    transition:.35s;
+
+    z-index:9999;
+
+}
+
+.toast-message.show{
+
+    transform:translateX(0);
+
+    opacity:1;
+
+}

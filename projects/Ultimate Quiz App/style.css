@@ -1,0 +1,520 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    min-height:100vh;
+    background:linear-gradient(135deg,#5B21B6,#2563EB,#06B6D4);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    overflow-x:hidden;
+    position:relative;
+    color:#fff;
+}
+
+/* =============================
+   Animated Background
+============================= */
+
+.circle{
+    position:absolute;
+    border-radius:50%;
+    filter:blur(20px);
+    animation:float 8s ease-in-out infinite;
+    z-index:-1;
+}
+
+.circle.one{
+    width:260px;
+    height:260px;
+    background:#8B5CF6;
+    top:-70px;
+    left:-70px;
+}
+
+.circle.two{
+    width:320px;
+    height:320px;
+    background:#06B6D4;
+    bottom:-120px;
+    right:-120px;
+    animation-delay:2s;
+}
+
+@keyframes float{
+
+    0%,100%{
+        transform:translateY(0);
+    }
+
+    50%{
+        transform:translateY(25px);
+    }
+
+}
+
+/* =============================
+   Back Button
+============================= */
+
+.backbtn{
+    position:absolute;
+    top:25px;
+    left:25px;
+    font-size:2rem;
+}
+
+.backbtn a{
+    color:#fff;
+    transition:.3s;
+}
+
+.backbtn a:hover{
+    color:#FFD54F;
+    transform:scale(1.1);
+}
+
+/* =============================
+   Main Card
+============================= */
+
+.container{
+
+    width:95%;
+    max-width:700px;
+
+    background:rgba(255,255,255,.12);
+
+    backdrop-filter:blur(18px);
+
+    border:1px solid rgba(255,255,255,.15);
+
+    border-radius:25px;
+
+    padding:35px;
+
+    box-shadow:0 20px 50px rgba(0,0,0,.25);
+
+    animation:fadeIn .8s ease;
+
+}
+
+@keyframes fadeIn{
+
+    from{
+        opacity:0;
+        transform:translateY(30px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+/* =============================
+   Header
+============================= */
+
+.header{
+
+    text-align:center;
+
+    margin-bottom:30px;
+
+}
+
+.header img{
+
+    width:90px;
+
+    margin-bottom:15px;
+
+    filter:drop-shadow(0 10px 20px rgba(0,0,0,.35));
+
+}
+
+.header h1{
+
+    font-size:2.3rem;
+
+    font-weight:700;
+
+    margin-bottom:8px;
+
+}
+
+.header p{
+
+    color:#ddd;
+
+    font-size:.95rem;
+
+    margin-bottom:25px;
+
+}
+
+/* =============================
+   Progress
+============================= */
+
+.progress-wrapper{
+
+    margin-top:10px;
+
+}
+
+.progress-bar{
+
+    width:100%;
+
+    height:10px;
+
+    background:rgba(255,255,255,.18);
+
+    border-radius:30px;
+
+    overflow:hidden;
+
+}
+
+.progress{
+
+    width:20%;
+
+    height:100%;
+
+    background:linear-gradient(90deg,#FFD54F,#FF9800);
+
+    border-radius:30px;
+
+    transition:.4s;
+
+}
+
+#question-count{
+
+    display:block;
+
+    margin-top:8px;
+
+    font-size:.9rem;
+
+    color:#F8F8F8;
+
+}
+
+/* =============================
+   Question
+============================= */
+
+.question{
+
+    font-size:1.45rem;
+
+    margin-bottom:25px;
+
+    line-height:1.5;
+
+    font-weight:600;
+
+}
+
+/* =============================
+   Options
+============================= */
+
+.options{
+
+    display:grid;
+
+    gap:18px;
+
+}
+
+.option-card{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+    padding:18px;
+
+    border-radius:16px;
+
+    cursor:pointer;
+
+    background:rgba(255,255,255,.08);
+
+    border:2px solid transparent;
+
+    transition:.3s;
+
+}
+
+.option-card:hover{
+
+    transform:translateY(-3px);
+
+    border-color:#FFD54F;
+
+    background:rgba(255,255,255,.15);
+
+}
+
+.option-card input{
+
+    width:20px;
+
+    height:20px;
+
+    accent-color:#FFD54F;
+
+    cursor:pointer;
+
+}
+
+.option-card span{
+
+    font-size:1rem;
+
+    font-weight:500;
+
+}
+
+/* Highlight Selected */
+
+.option-card:has(input:checked){
+
+    border-color:#FFD54F;
+
+    background:rgba(255,213,79,.18);
+
+}
+
+/* =============================
+   Button
+============================= */
+
+#submit{
+
+    width:100%;
+
+    margin-top:30px;
+
+    padding:16px;
+
+    border:none;
+
+    border-radius:14px;
+
+    background:linear-gradient(90deg,#F59E0B,#F97316);
+
+    color:#fff;
+
+    font-size:1rem;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+#submit i{
+
+    margin-left:10px;
+
+}
+
+#submit:hover{
+
+    transform:translateY(-2px);
+
+    box-shadow:0 10px 25px rgba(249,115,22,.35);
+
+}
+
+/* =============================
+   Result
+============================= */
+
+#result{
+
+    text-align:center;
+
+    margin-top:20px;
+
+    font-size:1.2rem;
+
+    font-weight:600;
+
+}
+
+#result h2{
+
+    font-size:2rem;
+
+    margin-bottom:15px;
+
+}
+
+#result p{
+
+    margin-bottom:25px;
+
+    color:#f4f4f4;
+
+}
+
+#result button{
+
+    padding:15px 30px;
+
+    border:none;
+
+    border-radius:14px;
+
+    background:#FFD54F;
+
+    color:#222;
+
+    font-size:1rem;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+#result button:hover{
+
+    transform:scale(1.05);
+
+}
+
+/* =============================
+   Footer
+============================= */
+
+footer{
+
+    position:absolute;
+
+    bottom:15px;
+
+    width:100%;
+
+    text-align:center;
+
+    color:#fff;
+
+    font-size:.95rem;
+
+}
+
+footer a{
+
+    color:#FFD54F;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+}
+
+footer a:hover{
+
+    color:#fff;
+
+}
+
+/* =============================
+   Responsive
+============================= */
+
+@media(max-width:768px){
+
+.container{
+
+    width:92%;
+
+    padding:25px;
+
+}
+
+.header h1{
+
+    font-size:1.9rem;
+
+}
+
+.question{
+
+    font-size:1.2rem;
+
+}
+
+.option-card{
+
+    padding:15px;
+
+}
+
+}
+
+@media(max-width:480px){
+
+.backbtn{
+
+    top:15px;
+
+    left:15px;
+
+}
+
+.header img{
+
+    width:75px;
+
+}
+
+.header h1{
+
+    font-size:1.6rem;
+
+}
+
+.question{
+
+    font-size:1.05rem;
+
+}
+
+#submit{
+
+    padding:14px;
+
+}
+
+footer{
+
+    position:relative;
+
+    margin-top:25px;
+
+}
+
+}

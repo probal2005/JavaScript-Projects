@@ -1,0 +1,666 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    min-height:100vh;
+    background:#050816;
+    color:#fff;
+    overflow-x:hidden;
+}
+
+/* ===========================
+        Animated Background
+=========================== */
+
+.glow{
+    position:fixed;
+    border-radius:50%;
+    filter:blur(120px);
+    opacity:.35;
+    animation:float 8s ease-in-out infinite;
+    z-index:-1;
+}
+
+.glow1{
+    width:300px;
+    height:300px;
+    background:#7C3AED;
+    top:-120px;
+    left:-120px;
+}
+
+.glow2{
+    width:350px;
+    height:350px;
+    background:#2563EB;
+    right:-120px;
+    bottom:-100px;
+    animation-delay:2s;
+}
+
+.glow3{
+    width:250px;
+    height:250px;
+    background:#06B6D4;
+    top:45%;
+    left:50%;
+    animation-delay:4s;
+}
+
+@keyframes float{
+
+0%,100%{
+
+transform:translateY(0);
+
+}
+
+50%{
+
+transform:translateY(40px);
+
+}
+
+}
+
+/* ===========================
+      Wrapper
+=========================== */
+
+.page-wrapper{
+
+min-height:100vh;
+
+display:flex;
+
+flex-direction:column;
+
+justify-content:center;
+
+align-items:center;
+
+padding:40px 20px;
+
+}
+
+/* ===========================
+      Back Button
+=========================== */
+
+.backbtn{
+
+width:100%;
+
+max-width:700px;
+
+margin-bottom:20px;
+
+}
+
+.backbtn a{
+
+font-size:2rem;
+
+color:#60A5FA;
+
+transition:.3s;
+
+}
+
+.backbtn a:hover{
+
+color:#fff;
+
+}
+
+/* ===========================
+      Calculator Card
+=========================== */
+
+.calculator{
+
+width:100%;
+
+max-width:700px;
+
+background:rgba(18,23,42,.75);
+
+backdrop-filter:blur(20px);
+
+border:1px solid rgba(255,255,255,.08);
+
+border-radius:28px;
+
+padding:35px;
+
+box-shadow:0 20px 60px rgba(0,0,0,.5);
+
+animation:fade .8s ease;
+
+}
+
+@keyframes fade{
+
+from{
+
+opacity:0;
+
+transform:translateY(30px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+/* ===========================
+      Header
+=========================== */
+
+.header{
+
+text-align:center;
+
+margin-bottom:30px;
+
+}
+
+.logo{
+
+width:90px;
+
+height:90px;
+
+margin:auto;
+
+border-radius:50%;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+background:linear-gradient(135deg,#2563EB,#7C3AED);
+
+box-shadow:0 0 35px rgba(124,58,237,.5);
+
+margin-bottom:20px;
+
+}
+
+.logo i{
+
+font-size:2.8rem;
+
+}
+
+.header h1{
+
+font-size:2.3rem;
+
+font-weight:700;
+
+}
+
+.header p{
+
+margin-top:10px;
+
+color:#94A3B8;
+
+}
+
+/* ===========================
+      Inputs
+=========================== */
+
+.inputs{
+
+display:grid;
+
+grid-template-columns:repeat(2,1fr);
+
+gap:20px;
+
+margin-bottom:20px;
+
+}
+
+.input-group{
+
+display:flex;
+
+flex-direction:column;
+
+margin-bottom:20px;
+
+}
+
+.input-group label{
+
+margin-bottom:10px;
+
+font-size:.95rem;
+
+font-weight:600;
+
+color:#CBD5E1;
+
+}
+
+.input-group label i{
+
+margin-right:8px;
+
+color:#60A5FA;
+
+}
+
+.input-group input,
+.input-group select{
+
+padding:15px;
+
+border:none;
+
+outline:none;
+
+border-radius:15px;
+
+background:#111827;
+
+color:#fff;
+
+font-size:1rem;
+
+border:2px solid transparent;
+
+transition:.3s;
+
+}
+
+.input-group input:focus,
+.input-group select:focus{
+
+border-color:#3B82F6;
+
+box-shadow:0 0 12px rgba(59,130,246,.5);
+
+}
+
+.input-group select option{
+
+background:#111827;
+
+}
+
+/* ===========================
+      Buttons
+=========================== */
+
+.buttons{
+
+display:grid;
+
+grid-template-columns:repeat(3,1fr);
+
+gap:15px;
+
+margin:25px 0;
+
+}
+
+.buttons button{
+
+padding:15px;
+
+border:none;
+
+border-radius:15px;
+
+cursor:pointer;
+
+font-size:1rem;
+
+font-weight:600;
+
+transition:.3s;
+
+color:#fff;
+
+}
+
+#calculateBtn{
+
+background:linear-gradient(135deg,#2563EB,#7C3AED);
+
+}
+
+#resetBtn{
+
+background:linear-gradient(135deg,#EA580C,#F59E0B);
+
+}
+
+#copyBtn{
+
+background:linear-gradient(135deg,#16A34A,#22C55E);
+
+}
+
+.buttons button:hover{
+
+transform:translateY(-4px);
+
+box-shadow:0 10px 20px rgba(0,0,0,.4);
+
+}
+
+/* ===========================
+      Result Card
+=========================== */
+
+.result-card{
+
+background:#0F172A;
+
+border-radius:20px;
+
+padding:30px;
+
+text-align:center;
+
+margin-bottom:30px;
+
+border:1px solid rgba(255,255,255,.08);
+
+}
+
+.result-card span{
+
+color:#94A3B8;
+
+text-transform:uppercase;
+
+letter-spacing:2px;
+
+}
+
+.result-card h2{
+
+font-size:3rem;
+
+margin:15px 0;
+
+color:#38BDF8;
+
+word-break:break-word;
+
+}
+
+.result-card small{
+
+color:#CBD5E1;
+
+}
+
+/* ===========================
+      History
+=========================== */
+
+.history{
+
+background:#0F172A;
+
+border-radius:20px;
+
+padding:20px;
+
+border:1px solid rgba(255,255,255,.08);
+
+}
+
+.history-header{
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+margin-bottom:20px;
+
+}
+
+.history-header h3{
+
+font-size:1.1rem;
+
+}
+
+.history-header button{
+
+width:42px;
+
+height:42px;
+
+border:none;
+
+border-radius:12px;
+
+cursor:pointer;
+
+background:#DC2626;
+
+color:#fff;
+
+transition:.3s;
+
+}
+
+.history-header button:hover{
+
+transform:scale(1.08);
+
+}
+
+#historyList{
+
+list-style:none;
+
+max-height:250px;
+
+overflow-y:auto;
+
+}
+
+#historyList li{
+
+background:#111827;
+
+margin-bottom:12px;
+
+padding:14px 16px;
+
+border-radius:12px;
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+font-size:.95rem;
+
+transition:.3s;
+
+}
+
+#historyList li:hover{
+
+background:#1E293B;
+
+transform:translateX(5px);
+
+}
+
+/* Scrollbar */
+
+#historyList::-webkit-scrollbar{
+
+width:8px;
+
+}
+
+#historyList::-webkit-scrollbar-thumb{
+
+background:#3B82F6;
+
+border-radius:10px;
+
+}
+
+/* ===========================
+      Footer
+=========================== */
+
+.footer{
+
+margin-top:35px;
+
+text-align:center;
+
+color:#94A3B8;
+
+font-size:.95rem;
+
+}
+
+.footer a{
+
+color:#60A5FA;
+
+text-decoration:none;
+
+font-weight:600;
+
+transition:.3s;
+
+}
+
+.footer a:hover{
+
+color:#fff;
+
+}
+
+/* ===========================
+      Responsive
+=========================== */
+
+@media(max-width:768px){
+
+.inputs{
+
+grid-template-columns:1fr;
+
+}
+
+.buttons{
+
+grid-template-columns:1fr;
+
+}
+
+.calculator{
+
+padding:25px;
+
+}
+
+.logo{
+
+width:75px;
+
+height:75px;
+
+}
+
+.logo i{
+
+font-size:2.2rem;
+
+}
+
+.header h1{
+
+font-size:2rem;
+
+}
+
+.result-card h2{
+
+font-size:2.4rem;
+
+}
+
+}
+
+@media(max-width:480px){
+
+.page-wrapper{
+
+padding:20px 15px;
+
+}
+
+.calculator{
+
+padding:20px;
+
+border-radius:20px;
+
+}
+
+.header h1{
+
+font-size:1.7rem;
+
+}
+
+.result-card{
+
+padding:20px;
+
+}
+
+.result-card h2{
+
+font-size:2rem;
+
+}
+
+.history-header{
+
+flex-direction:column;
+
+gap:15px;
+
+align-items:flex-start;
+
+}
+
+}

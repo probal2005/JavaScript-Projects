@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Grade Calculator</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="background">
+
+    <div class="backbtn">
+        <a href="/JavaScript-Projects/#project">
+            <i class="fas fa-arrow-circle-left"></i>
+        </a>
+    </div>
+
+    <div class="container">
+
+        <div class="screen">
+
+            <div class="screen-body">
+
+                <div class="title">
+                    Student Grade Calculator
+                </div>
+
+                <div class="form-body">
+
+                    <div class="inputs">
+                        <input type="number" id="phy" placeholder="Physics" min="0" max="100">
+                    </div>
+
+                    <div class="inputs">
+                        <input type="number" id="chem" placeholder="Chemistry" min="0" max="100">
+                    </div>
+
+                    <div class="inputs">
+                        <input type="number" id="math" placeholder="Mathematics" min="0" max="100">
+                    </div>
+
+                    <div class="inputs">
+                        <input type="number" id="cs" placeholder="Computer Science" min="0" max="100">
+                    </div>
+
+                    <div class="inputs">
+                        <input type="number" id="eng" placeholder="English" min="0" max="100">
+                    </div>
+
+                    <div class="form-btn">
+                        <button class="btn" onclick="calc()">
+                            Calculate Percentage
+                            <i class="fas fa-arrow-circle-right"></i>
+                        </button>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="result">
+                <p id="result"></p>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<footer>
+    Made with ❤️ by
+    <a href="https://github.com/probal2005" target="_blank">
+        Probal Dhali
+    </a>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

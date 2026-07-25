@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Modern Todo App</title>
+
+    <link rel="shortcut icon" href="./assets/fav.ico" type="image/x-icon">
+
+    <!-- Font Awesome -->
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- Google Font -->
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- Animated Background -->
+
+    <div class="blob blob1"></div>
+
+    <div class="blob blob2"></div>
+
+    <div class="blob blob3"></div>
+
+    <!-- Back Button -->
+
+    <div class="backbtn">
+
+        <a href="/JavaScript-Projects/#project">
+
+            <i class="fas fa-arrow-circle-left"></i>
+
+        </a>
+
+    </div>
+
+    <!-- Main Container -->
+
+    <div class="container">
+
+        <!-- Header -->
+
+        <div class="header">
+
+            <div class="icon">
+
+                <i class="fas fa-list-check"></i>
+
+            </div>
+
+            <h1>Modern Todo App</h1>
+
+            <p>Stay productive. Organize your daily tasks.</p>
+
+        </div>
+
+        <!-- Search -->
+
+        <div class="search-box">
+
+            <i class="fas fa-search"></i>
+
+            <input
+                type="text"
+                id="searchTask"
+                placeholder="Search tasks...">
+
+        </div>
+
+        <!-- Add Task -->
+
+        <div class="input-area">
+
+            <input
+                type="text"
+                id="taskInput"
+                placeholder="What needs to be done?">
+
+            <select id="priority">
+
+                <option value="Low">🟢 Low</option>
+
+                <option value="Medium">🟡 Medium</option>
+
+                <option value="High">🔴 High</option>
+
+            </select>
+
+            <button id="addTask">
+
+                <i class="fas fa-plus"></i>
+
+            </button>
+
+        </div>
+
+        <!-- Filter Buttons -->
+
+        <div class="filters">
+
+            <button class="filter-btn active" data-filter="all">
+
+                All
+
+            </button>
+
+            <button class="filter-btn" data-filter="pending">
+
+                Pending
+
+            </button>
+
+            <button class="filter-btn" data-filter="completed">
+
+                Completed
+
+            </button>
+
+        </div>
+
+        <!-- Statistics -->
+
+        <div class="stats">
+
+            <div>
+
+                <span id="totalTasks">0</span>
+
+                <small>Total</small>
+
+            </div>
+
+            <div>
+
+                <span id="pendingTasks">0</span>
+
+                <small>Pending</small>
+
+            </div>
+
+            <div>
+
+                <span id="completedTasks">0</span>
+
+                <small>Completed</small>
+
+            </div>
+
+        </div>
+
+        <!-- Todo List -->
+
+        <ul id="todoList">
+
+            <!-- Dynamic Tasks -->
+
+        </ul>
+
+        <!-- Empty State -->
+
+        <div id="emptyState">
+
+            <i class="fas fa-clipboard-list"></i>
+
+            <h3>No Tasks Yet</h3>
+
+            <p>Add your first task to get started.</p>
+
+        </div>
+
+        <!-- Footer Buttons -->
+
+        <div class="bottom-actions">
+
+            <button id="clearCompleted">
+
+                <i class="fas fa-check-double"></i>
+
+                Clear Completed
+
+            </button>
+
+            <button id="clearAll">
+
+                <i class="fas fa-trash"></i>
+
+                Clear All
+
+            </button>
+
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+
+    <footer>
+
+        Made with ❤️ by
+
+        <a
+            href="https://github.com/probal2005"
+            target="_blank">
+
+            Probal Dhali
+
+        </a>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

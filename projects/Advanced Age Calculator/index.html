@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Advanced Age Calculator</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>
+            <i class="fa-solid fa-cake-candles"></i>
+            Advanced Age Calculator
+        </h1>
+
+        <div class="input-box">
+
+            <input type="date" id="input-date">
+
+            <button id="calculate">
+                <i class="fas fa-calculator"></i>
+                Calculate
+            </button>
+
+        </div>
+
+        <!-- Main Result -->
+
+        <div class="result">
+
+            <div class="card">
+
+                <h2 id="years">0</h2>
+
+                <p>Years</p>
+
+            </div>
+
+            <div class="card">
+
+                <h2 id="months">0</h2>
+
+                <p>Months</p>
+
+            </div>
+
+            <div class="card">
+
+                <h2 id="days">0</h2>
+
+                <p>Days</p>
+
+            </div>
+
+        </div>
+
+        <!-- Extra Information -->
+
+        <div class="extra">
+
+            <div class="info">
+                <span>📅 Day of Birth</span>
+                <p id="weekday">-</p>
+            </div>
+
+            <div class="info">
+                <span>♈ Zodiac</span>
+                <p id="zodiac">-</p>
+            </div>
+
+            <div class="info">
+                <span>🐉 Chinese Zodiac</span>
+                <p id="chinese">-</p>
+            </div>
+
+            <div class="info">
+                <span>🎂 Next Birthday</span>
+                <p id="nextBirthday">-</p>
+            </div>
+
+            <div class="info">
+                <span>👤 Age Status</span>
+                <p id="status">-</p>
+            </div>
+
+        </div>
+
+        <!-- Statistics -->
+
+        <div class="stats">
+
+            <div class="stat-card">
+
+                <h3 id="totalDays">0</h3>
+
+                <p>Total Days</p>
+
+            </div>
+
+            <div class="stat-card">
+
+                <h3 id="totalHours">0</h3>
+
+                <p>Total Hours</p>
+
+            </div>
+
+            <div class="stat-card">
+
+                <h3 id="totalMinutes">0</h3>
+
+                <p>Total Minutes</p>
+
+            </div>
+
+        </div>
+
+        <!-- Buttons -->
+
+        <div class="buttons">
+
+            <button id="copyBtn">
+
+                <i class="fas fa-copy"></i>
+
+                Copy Result
+
+            </button>
+
+            <button id="resetBtn">
+
+                <i class="fas fa-rotate-left"></i>
+
+                Reset
+
+            </button>
+
+        </div>
+
+        <!-- Birthday Message -->
+
+        <div id="birthdayMessage">
+
+            🎉🎂 Happy Birthday! Wishing you a wonderful year ahead! 🎂🎉
+
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+
+    <footer>
+
+        © 2026
+
+        <a href="https://github.com/probal2005" target="_blank">
+
+            Probal Dhali
+
+        </a>
+
+        | All Rights Reserved.
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

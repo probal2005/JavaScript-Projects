@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Ultimate Quiz App</title>
+
+    <link rel="icon" href="fav.png">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Background Circles -->
+    <div class="circle one"></div>
+    <div class="circle two"></div>
+
+    <!-- Back Button -->
+
+    <div class="backbtn">
+        <a href="/JavaScript-Projects/#project">
+            <i class="fas fa-arrow-circle-left"></i>
+        </a>
+    </div>
+
+    <!-- Main Card -->
+
+    <div class="container">
+
+        <!-- Header -->
+
+        <div class="header">
+
+            <img src="fav.png" alt="Quiz Logo">
+
+            <h1>Ultimate Quiz</h1>
+
+            <p>Test your knowledge and challenge yourself!</p>
+
+            <!-- Progress -->
+
+            <div class="progress-wrapper">
+
+                <div class="progress-bar">
+
+                    <div class="progress" id="progress"></div>
+
+                </div>
+
+                <span id="question-count">
+                    Question 1 / 5
+                </span>
+
+            </div>
+
+        </div>
+
+        <!-- Quiz Section -->
+
+        <div id="quiz-wrapper">
+
+            <h2 class="question">
+                Loading Question...
+            </h2>
+
+            <div class="options">
+
+                <label class="option-card">
+                    <input class="answer" type="radio" name="answer" id="ans1">
+                    <span id="opt1">Option 1</span>
+                </label>
+
+                <label class="option-card">
+                    <input class="answer" type="radio" name="answer" id="ans2">
+                    <span id="opt2">Option 2</span>
+                </label>
+
+                <label class="option-card">
+                    <input class="answer" type="radio" name="answer" id="ans3">
+                    <span id="opt3">Option 3</span>
+                </label>
+
+                <label class="option-card">
+                    <input class="answer" type="radio" name="answer" id="ans4">
+                    <span id="opt4">Option 4</span>
+                </label>
+
+            </div>
+
+            <button id="submit">
+
+                Next Question
+
+                <i class="fas fa-arrow-right"></i>
+
+            </button>
+
+        </div>
+
+        <!-- Result -->
+
+        <div id="result"></div>
+
+    </div>
+
+    <!-- Footer -->
+
+    <footer>
+
+        Made with ❤️ by
+
+        <a href="https://github.com/probal2005" target="_blank">
+
+            Probal Dhali
+
+        </a>
+
+    </footer>
+
+    <script src="quizes.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

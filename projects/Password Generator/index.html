@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Password Generator</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Back Button -->
+    <div class="backbtn">
+        <a href="/JavaScript-Projects/#project">
+            <i class="fas fa-arrow-circle-left"></i>
+        </a>
+    </div>
+
+    <!-- Main Container -->
+    <div class="container">
+
+        <h1>
+            <i class="fas fa-lock"></i>
+            Password Generator
+        </h1>
+
+        <!-- Generated Password -->
+        <div class="header">
+
+            <input type="text" id="pwd" placeholder="Generate a secure password..." readonly>
+
+            <button class="copy" id="copy" title="Copy Password">
+                <i class="fas fa-copy"></i>
+            </button>
+
+        </div>
+
+        <!-- Options -->
+        <div class="body">
+
+            <div class="form-control">
+                <label for="plength">Password Length</label>
+                <input type="number" id="plength" value="12" min="4" max="30">
+            </div>
+
+            <div class="form-control">
+                <label for="puppercase">Include Uppercase</label>
+                <input type="checkbox" id="puppercase" checked>
+            </div>
+
+            <div class="form-control">
+                <label for="plowercase">Include Lowercase</label>
+                <input type="checkbox" id="plowercase" checked>
+            </div>
+
+            <div class="form-control">
+                <label for="pnumber">Include Numbers</label>
+                <input type="checkbox" id="pnumber" checked>
+            </div>
+
+            <div class="form-control">
+                <label for="psymbol">Include Symbols</label>
+                <input type="checkbox" id="psymbol" checked>
+            </div>
+
+            <button id="submit">
+                <span>Generate Password</span>
+            </button>
+
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        Made with ❤️ by
+        <a href="https://github.com/probal2005" target="_blank">
+            Probal Dhali
+        </a>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

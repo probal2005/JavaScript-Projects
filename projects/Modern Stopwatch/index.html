@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Modern Stopwatch</title>
+
+    <link rel="shortcut icon" href="./assets/fav.ico" type="image/x-icon">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- Google Font -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- Animated Background -->
+
+    <div class="blob blob1"></div>
+    <div class="blob blob2"></div>
+    <div class="blob blob3"></div>
+
+    <!-- Back Button -->
+
+    <div class="backbtn">
+
+        <a href="/JavaScript-Projects/#project">
+
+            <i class="fas fa-arrow-circle-left"></i>
+
+        </a>
+
+    </div>
+
+    <!-- Main Stopwatch Card -->
+
+    <div class="container">
+
+        <!-- Header -->
+
+        <div class="header">
+
+            <div class="icon">
+
+                <i class="fas fa-stopwatch"></i>
+
+            </div>
+
+            <h1>Modern Stopwatch</h1>
+
+            <p>Track your time with precision and style.</p>
+
+        </div>
+
+        <!-- Timer -->
+
+        <div class="time">
+
+            <div class="time-box">
+
+                <span class="digit" id="hr">00</span>
+
+                <span class="txt">Hours</span>
+
+            </div>
+
+            <div class="time-box">
+
+                <span class="digit" id="min">00</span>
+
+                <span class="txt">Minutes</span>
+
+            </div>
+
+            <div class="time-box">
+
+                <span class="digit" id="sec">00</span>
+
+                <span class="txt">Seconds</span>
+
+            </div>
+
+            <div class="time-box">
+
+                <span class="digit" id="count">00</span>
+
+                <span class="txt">Milliseconds</span>
+
+            </div>
+
+        </div>
+
+        <!-- Buttons -->
+
+        <div class="btns">
+
+            <button class="btn start" onclick="start()">
+
+                <i class="fas fa-play"></i>
+
+                Start
+
+            </button>
+
+            <button class="btn stop" onclick="stop()">
+
+                <i class="fas fa-pause"></i>
+
+                Stop
+
+            </button>
+
+            <button class="btn reset" onclick="reset()">
+
+                <i class="fas fa-rotate-left"></i>
+
+                Reset
+
+            </button>
+
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+
+    <footer>
+
+        Made with ❤️ by
+
+        <a href="https://github.com/probal2005"
+            target="_blank">
+
+            Probal Dhali
+
+        </a>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

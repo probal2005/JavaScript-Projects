@@ -1,0 +1,486 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    min-height:100vh;
+    background:linear-gradient(135deg,#0F172A,#1E3A8A,#7C3AED,#EC4899);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    overflow-x:hidden;
+    position:relative;
+    color:#fff;
+}
+
+/*==========================
+Animated Background
+==========================*/
+
+.blob{
+    position:absolute;
+    border-radius:50%;
+    filter:blur(90px);
+    opacity:.45;
+    animation:float 10s ease-in-out infinite;
+    z-index:-1;
+}
+
+.blob1{
+    width:320px;
+    height:320px;
+    background:#8B5CF6;
+    top:-120px;
+    left:-100px;
+}
+
+.blob2{
+    width:280px;
+    height:280px;
+    background:#06B6D4;
+    bottom:-100px;
+    right:-80px;
+    animation-delay:2s;
+}
+
+.blob3{
+    width:220px;
+    height:220px;
+    background:#F43F5E;
+    top:50%;
+    left:55%;
+    animation-delay:4s;
+}
+
+@keyframes float{
+
+    0%,100%{
+        transform:translateY(0);
+    }
+
+    50%{
+        transform:translateY(30px);
+    }
+
+}
+
+/*==========================
+Back Button
+==========================*/
+
+.backbtn{
+    position:absolute;
+    top:25px;
+    left:25px;
+    font-size:2rem;
+}
+
+.backbtn a{
+    color:#fff;
+    transition:.3s;
+}
+
+.backbtn a:hover{
+    color:#38BDF8;
+    transform:scale(1.1);
+}
+
+/*==========================
+Main Card
+==========================*/
+
+.container{
+
+    width:95%;
+
+    max-width:900px;
+
+    background:rgba(255,255,255,.08);
+
+    backdrop-filter:blur(18px);
+
+    border:1px solid rgba(255,255,255,.12);
+
+    border-radius:30px;
+
+    padding:35px;
+
+    box-shadow:0 20px 45px rgba(0,0,0,.35);
+
+    animation:fadeIn .8s ease;
+
+}
+
+@keyframes fadeIn{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(30px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/*==========================
+Header
+==========================*/
+
+.header{
+
+    text-align:center;
+
+    margin-bottom:35px;
+
+}
+
+.icon{
+
+    width:90px;
+
+    height:90px;
+
+    margin:auto;
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:linear-gradient(135deg,#FB7185,#F97316);
+
+    box-shadow:0 12px 30px rgba(249,115,22,.35);
+
+    margin-bottom:18px;
+
+}
+
+.icon i{
+
+    font-size:2.8rem;
+
+}
+
+.header h1{
+
+    font-size:2.4rem;
+
+    font-weight:700;
+
+}
+
+.header p{
+
+    margin-top:10px;
+
+    color:#CBD5E1;
+
+    font-size:1rem;
+
+}
+
+/*==========================
+Converter Grid
+==========================*/
+
+.converter{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:22px;
+
+}
+
+.input-group{
+
+    background:rgba(255,255,255,.08);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:18px;
+
+    padding:18px;
+
+    transition:.3s;
+
+}
+
+.input-group:hover{
+
+    transform:translateY(-5px);
+
+    background:rgba(255,255,255,.14);
+
+}
+
+.input-group label{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    font-size:1rem;
+
+    font-weight:600;
+
+    margin-bottom:12px;
+
+}
+
+.input-group label i{
+
+    color:#FBBF24;
+
+}
+
+.input-group input{
+
+    width:100%;
+
+    border:none;
+
+    outline:none;
+
+    background:rgba(255,255,255,.12);
+
+    color:#fff;
+
+    border-radius:12px;
+
+    padding:15px;
+
+    font-size:1.1rem;
+
+    transition:.3s;
+
+}
+
+.input-group input:focus{
+
+    background:rgba(255,255,255,.20);
+
+    box-shadow:0 0 0 2px #38BDF8;
+
+}
+
+.input-group input::placeholder{
+
+    color:#CBD5E1;
+
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{
+
+    -webkit-appearance:none;
+
+    margin:0;
+
+}
+
+/*==========================
+Buttons
+==========================*/
+
+.buttons{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:20px;
+
+    margin-top:35px;
+
+}
+
+.buttons button{
+
+    border:none;
+
+    outline:none;
+
+    cursor:pointer;
+
+    border-radius:50px;
+
+    padding:14px 28px;
+
+    font-size:1rem;
+
+    font-weight:600;
+
+    color:#fff;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    transition:.3s;
+
+}
+
+#resetBtn{
+
+    background:linear-gradient(135deg,#EF4444,#DC2626);
+
+    box-shadow:0 10px 25px rgba(239,68,68,.35);
+
+}
+
+#copyBtn{
+
+    background:linear-gradient(135deg,#3B82F6,#2563EB);
+
+    box-shadow:0 10px 25px rgba(59,130,246,.35);
+
+}
+
+.buttons button:hover{
+
+    transform:translateY(-4px);
+
+}
+
+/*==========================
+Footer
+==========================*/
+
+footer{
+
+    position:absolute;
+
+    bottom:20px;
+
+    width:100%;
+
+    text-align:center;
+
+    font-size:.95rem;
+
+}
+
+footer a{
+
+    color:#38BDF8;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+}
+
+footer a:hover{
+
+    color:#fff;
+
+}
+
+/*==========================
+Responsive
+==========================*/
+
+@media(max-width:768px){
+
+.container{
+
+    padding:25px;
+
+}
+
+.converter{
+
+    grid-template-columns:1fr;
+
+}
+
+.header h1{
+
+    font-size:2rem;
+
+}
+
+.buttons{
+
+    flex-direction:column;
+
+}
+
+.buttons button{
+
+    width:100%;
+
+    justify-content:center;
+
+}
+
+}
+
+@media(max-width:500px){
+
+.container{
+
+    width:92%;
+
+}
+
+.icon{
+
+    width:75px;
+
+    height:75px;
+
+}
+
+.icon i{
+
+    font-size:2.3rem;
+
+}
+
+.header h1{
+
+    font-size:1.7rem;
+
+}
+
+.backbtn{
+
+    top:15px;
+
+    left:15px;
+
+}
+
+footer{
+
+    position:relative;
+
+    margin:25px 0;
+
+}
+
+}

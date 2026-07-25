@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Modern Scientific Calculator</title>
+
+    <link rel="shortcut icon" href="./assets/fav.ico" type="image/x-icon">
+
+    <!-- Font Awesome -->
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- Google Font -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- Background Glow -->
+
+    <div class="glow glow1"></div>
+
+    <div class="glow glow2"></div>
+
+    <div class="glow glow3"></div>
+
+    <!-- Page Wrapper -->
+
+    <div class="page-wrapper">
+
+        <!-- Back Button -->
+
+        <div class="backbtn">
+
+            <a href="/JavaScript-Projects/#project">
+
+                <i class="fas fa-arrow-circle-left"></i>
+
+            </a>
+
+        </div>
+
+        <!-- Calculator -->
+
+        <div class="calculator">
+
+            <!-- Header -->
+
+            <div class="header">
+
+                <div class="logo">
+
+                    <i class="fas fa-calculator"></i>
+
+                </div>
+
+                <h1>Scientific Calculator</h1>
+
+                <p>Fast • Accurate • Modern</p>
+
+            </div>
+
+            <!-- Inputs -->
+
+            <div class="inputs">
+
+                <div class="input-group">
+
+                    <label>
+
+                        <i class="fas fa-hashtag"></i>
+
+                        First Number
+
+                    </label>
+
+                    <input
+                        type="number"
+                        id="num1"
+                        placeholder="Enter first number">
+
+                </div>
+
+                <div class="input-group">
+
+                    <label>
+
+                        <i class="fas fa-hashtag"></i>
+
+                        Second Number
+
+                    </label>
+
+                    <input
+                        type="number"
+                        id="num2"
+                        placeholder="Enter second number">
+
+                </div>
+
+            </div>
+
+            <!-- Operations -->
+
+            <div class="input-group">
+
+                <label>
+
+                    <i class="fas fa-sliders"></i>
+
+                    Select Operation
+
+                </label>
+
+                <select id="operation">
+
+                    <option value="add">➕ Addition</option>
+
+                    <option value="subtract">➖ Subtraction</option>
+
+                    <option value="multiply">✖ Multiplication</option>
+
+                    <option value="divide">➗ Division</option>
+
+                    <option value="modulus">🟠 Modulus</option>
+
+                    <option value="power">⬆ Power (xʸ)</option>
+
+                    <option value="sqrt">√ Square Root</option>
+
+                    <option value="cube">³ Cube</option>
+
+                    <option value="percentage">％ Percentage</option>
+
+                    <option value="average">📊 Average</option>
+
+                    <option value="maximum">🔺 Maximum</option>
+
+                    <option value="minimum">🔻 Minimum</option>
+
+                </select>
+
+            </div>
+
+            <!-- Buttons -->
+
+            <div class="buttons">
+
+                <button id="calculateBtn">
+
+                    <i class="fas fa-play"></i>
+
+                    Calculate
+
+                </button>
+
+                <button id="resetBtn">
+
+                    <i class="fas fa-rotate-left"></i>
+
+                    Reset
+
+                </button>
+
+                <button id="copyBtn">
+
+                    <i class="fas fa-copy"></i>
+
+                    Copy
+
+                </button>
+
+            </div>
+
+            <!-- Result -->
+
+            <div class="result-card">
+
+                <span>Result</span>
+
+                <h2 id="result">0</h2>
+
+                <small id="message">
+
+                    Ready to calculate
+
+                </small>
+
+            </div>
+
+            <!-- History -->
+
+            <div class="history">
+
+                <div class="history-header">
+
+                    <h3>
+
+                        <i class="fas fa-clock-rotate-left"></i>
+
+                        Calculation History
+
+                    </h3>
+
+                    <button id="clearHistory">
+
+                        <i class="fas fa-trash"></i>
+
+                    </button>
+
+                </div>
+
+                <ul id="historyList">
+
+                    <!-- JavaScript -->
+
+                </ul>
+
+            </div>
+
+        </div>
+
+        <!-- Footer -->
+
+        <footer class="footer">
+
+            <p>
+
+                Made with ❤️ by
+
+                <a href="https://github.com/probal2005" target="_blank">
+
+                    Probal Dhali
+
+                </a>
+
+            </p>
+
+        </footer>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

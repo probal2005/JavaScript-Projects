@@ -1,0 +1,517 @@
+/* ===========================
+   Google Font
+=========================== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* ===========================
+   Reset
+=========================== */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+/* ===========================
+   Animated Background
+=========================== */
+
+body{
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:linear-gradient(-45deg,#ff512f,#dd2476,#6a11cb,#2575fc);
+
+    background-size:400% 400%;
+
+    animation:gradientBG 12s ease infinite;
+
+    overflow-x:hidden;
+
+    padding:30px;
+
+}
+
+@keyframes gradientBG{
+
+    0%{
+        background-position:0% 50%;
+    }
+
+    50%{
+        background-position:100% 50%;
+    }
+
+    100%{
+        background-position:0% 50%;
+    }
+
+}
+
+/* ===========================
+   Glass Container
+=========================== */
+
+.container{
+
+    width:100%;
+
+    max-width:900px;
+
+    padding:35px;
+
+    border-radius:25px;
+
+    background:rgba(255,255,255,.12);
+
+    backdrop-filter:blur(20px);
+
+    border:1px solid rgba(255,255,255,.2);
+
+    box-shadow:0 15px 40px rgba(0,0,0,.35);
+
+}
+
+/* ===========================
+   Heading
+=========================== */
+
+h1{
+
+    color:white;
+
+    text-align:center;
+
+    margin-bottom:35px;
+
+    font-size:2.3rem;
+
+}
+
+h1 i{
+
+    color:#ffd700;
+
+}
+
+/* ===========================
+   Input
+=========================== */
+
+.input-box{
+
+    display:flex;
+
+    gap:15px;
+
+    margin-bottom:35px;
+
+    flex-wrap:wrap;
+
+}
+
+.input-box input{
+
+    flex:1;
+
+    min-width:220px;
+
+    padding:15px;
+
+    border:none;
+
+    border-radius:12px;
+
+    font-size:16px;
+
+}
+
+.input-box button{
+
+    padding:15px 30px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:#111;
+
+    color:white;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+    font-size:16px;
+
+}
+
+.input-box button:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:
+    0 0 15px cyan,
+    0 0 35px cyan;
+
+}
+
+/* ===========================
+   Result Cards
+=========================== */
+
+.result{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:20px;
+
+    margin-bottom:30px;
+
+}
+
+.card{
+
+    padding:25px;
+
+    background:rgba(255,255,255,.15);
+
+    border-radius:20px;
+
+    color:white;
+
+    text-align:center;
+
+    transition:.3s;
+
+}
+
+.card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.card h2{
+
+    font-size:3rem;
+
+    color:#00ffff;
+
+    text-shadow:0 0 12px cyan;
+
+}
+
+.card p{
+
+    margin-top:10px;
+
+    font-size:18px;
+
+}
+
+/* ===========================
+   Extra Info
+=========================== */
+
+.extra{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:20px;
+
+    margin-bottom:30px;
+
+}
+
+.info{
+
+    background:rgba(255,255,255,.12);
+
+    border-radius:15px;
+
+    padding:18px;
+
+    color:white;
+
+}
+
+.info span{
+
+    display:block;
+
+    color:#00ffff;
+
+    margin-bottom:8px;
+
+    font-weight:600;
+
+}
+
+.info p{
+
+    font-size:18px;
+
+}
+
+/* ===========================
+   Statistics
+=========================== */
+
+.stats{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:20px;
+
+    margin-bottom:30px;
+
+}
+
+.stat-card{
+
+    background:rgba(255,255,255,.12);
+
+    border-radius:20px;
+
+    padding:20px;
+
+    text-align:center;
+
+    color:white;
+
+}
+
+.stat-card h3{
+
+    color:#ffd700;
+
+    font-size:2rem;
+
+}
+
+.stat-card p{
+
+    margin-top:10px;
+
+}
+
+/* ===========================
+   Buttons
+=========================== */
+
+.buttons{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
+}
+
+.buttons button{
+
+    padding:15px 30px;
+
+    border:none;
+
+    border-radius:50px;
+
+    background:#111;
+
+    color:white;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+    font-size:16px;
+
+}
+
+.buttons button:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:
+    0 0 15px cyan,
+    0 0 30px cyan;
+
+}
+
+/* ===========================
+   Birthday Message
+=========================== */
+
+#birthdayMessage{
+
+    display:none;
+
+    margin-top:35px;
+
+    padding:18px;
+
+    border-radius:15px;
+
+    background:#00c853;
+
+    color:white;
+
+    text-align:center;
+
+    font-size:22px;
+
+    font-weight:600;
+
+    animation:pulse 1s infinite;
+
+}
+
+@keyframes pulse{
+
+    0%{
+        transform:scale(1);
+    }
+
+    50%{
+        transform:scale(1.05);
+    }
+
+    100%{
+        transform:scale(1);
+    }
+
+}
+
+/* ===========================
+   Footer
+=========================== */
+
+footer{
+
+    position:fixed;
+
+    bottom:15px;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    width:100%;
+
+    text-align:center;
+
+    color:white;
+
+    font-size:15px;
+
+}
+
+footer a{
+
+    color:#00ffff;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+}
+
+footer a:hover{
+
+    color:#ff00ff;
+
+    text-shadow:
+    0 0 5px white,
+    0 0 10px cyan,
+    0 0 25px cyan;
+
+}
+
+/* ===========================
+   Responsive
+=========================== */
+
+@media(max-width:768px){
+
+    .result{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .stats{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .extra{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .input-box{
+
+        flex-direction:column;
+
+    }
+
+    .input-box button{
+
+        width:100%;
+
+    }
+
+    h1{
+
+        font-size:1.8rem;
+
+    }
+
+}
+
+@media(max-width:500px){
+
+    .container{
+
+        padding:20px;
+
+    }
+
+    .card h2{
+
+        font-size:2.3rem;
+
+    }
+
+    .buttons{
+
+        flex-direction:column;
+
+    }
+
+    .buttons button{
+
+        width:100%;
+
+    }
+
+}

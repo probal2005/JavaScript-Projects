@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Modern Notes App</title>
+
+    <link rel="shortcut icon" href="./assets/fav.ico" type="image/x-icon">
+
+    <!-- Google Font -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- Animated Background -->
+
+    <div class="bg-circle circle1"></div>
+
+    <div class="bg-circle circle2"></div>
+
+    <div class="bg-circle circle3"></div>
+
+    <!-- Wrapper -->
+
+    <div class="wrapper">
+
+        <!-- Header -->
+
+        <header>
+
+            <div class="logo">
+
+                <i class="fas fa-note-sticky"></i>
+
+                <div>
+
+                    <h1>NotesHub</h1>
+
+                    <span>Organize Your Ideas</span>
+
+                </div>
+
+            </div>
+
+            <div class="header-actions">
+
+                <button id="exportBtn">
+
+                    <i class="fas fa-file-export"></i>
+
+                    Export
+
+                </button>
+
+                <button id="clearAllBtn">
+
+                    <i class="fas fa-trash"></i>
+
+                    Clear All
+
+                </button>
+
+                <button id="addBtn">
+
+                    <i class="fas fa-plus"></i>
+
+                    Add Note
+
+                </button>
+
+            </div>
+
+        </header>
+
+        <!-- Search -->
+
+        <section class="top-bar">
+
+            <div class="search-box">
+
+                <i class="fas fa-search"></i>
+
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Search notes...">
+
+            </div>
+
+            <div class="stats">
+
+                <div class="stat-card">
+
+                    <span>Total Notes</span>
+
+                    <h3 id="totalNotes">0</h3>
+
+                </div>
+
+                <div class="stat-card">
+
+                    <span>Pinned</span>
+
+                    <h3 id="pinnedNotes">0</h3>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Notes Grid -->
+
+        <main id="notesContainer">
+
+            <!-- JavaScript Notes -->
+
+        </main>
+
+        <!-- Empty State -->
+
+        <section id="emptyState">
+
+            <i class="fas fa-note-sticky"></i>
+
+            <h2>No Notes Yet</h2>
+
+            <p>
+
+                Click the <strong>Add Note</strong> button to create your first note.
+
+            </p>
+
+        </section>
+
+    </div>
+
+    <!-- Note Modal -->
+
+    <div class="modal hidden" id="noteModal">
+
+        <div class="modal-content">
+
+            <div class="modal-header">
+
+                <h2>
+
+                    <i class="fas fa-pen"></i>
+
+                    Note Editor
+
+                </h2>
+
+                <button id="closeModal">
+
+                    <i class="fas fa-times"></i>
+
+                </button>
+
+            </div>
+
+            <div class="modal-body">
+
+                <div class="input-group">
+
+                    <label>
+
+                        Title
+
+                    </label>
+
+                    <input
+                        type="text"
+                        id="noteTitle"
+                        placeholder="Enter title">
+
+                </div>
+
+                <div class="input-group">
+
+                    <label>
+
+                        Description
+
+                    </label>
+
+                    <textarea
+                        id="noteContent"
+                        rows="8"
+                        placeholder="Write your note..."></textarea>
+
+                </div>
+
+                <div class="modal-options">
+
+                    <div class="colors">
+
+                        <span
+                            class="color active"
+                            data-color="#6366F1"></span>
+
+                        <span
+                            class="color"
+                            data-color="#7C3AED"></span>
+
+                        <span
+                            class="color"
+                            data-color="#10B981"></span>
+
+                        <span
+                            class="color"
+                            data-color="#F59E0B"></span>
+
+                        <span
+                            class="color"
+                            data-color="#EF4444"></span>
+
+                    </div>
+
+                    <label class="pin-box">
+
+                        <input
+                            type="checkbox"
+                            id="pinNote">
+
+                        <span>
+
+                            📌 Pin Note
+
+                        </span>
+
+                    </label>
+
+                </div>
+
+            </div>
+
+            <div class="modal-footer">
+
+                <button id="cancelBtn">
+
+                    Cancel
+
+                </button>
+
+                <button id="saveBtn">
+
+                    <i class="fas fa-floppy-disk"></i>
+
+                    Save Note
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+
+    <footer class="footer">
+
+        <p>
+
+            Made with ❤️ by
+
+            <a href="https://github.com/probal2005" target="_blank">
+
+                Probal Dhali
+
+            </a>
+
+        </p>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

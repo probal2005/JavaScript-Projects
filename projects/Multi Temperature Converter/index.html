@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Multi Temperature Converter</title>
+
+    <link rel="shortcut icon" href="./assets/fav.ico" type="image/x-icon">
+
+    <!-- Font Awesome -->
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- Google Font -->
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- Animated Background -->
+
+    <div class="blob blob1"></div>
+
+    <div class="blob blob2"></div>
+
+    <div class="blob blob3"></div>
+
+    <!-- Back Button -->
+
+    <div class="backbtn">
+
+        <a href="/JavaScript-Projects/#project">
+
+            <i class="fas fa-arrow-circle-left"></i>
+
+        </a>
+
+    </div>
+
+    <!-- Main Card -->
+
+    <div class="container">
+
+        <!-- Header -->
+
+        <div class="header">
+
+            <div class="icon">
+
+                <i class="fas fa-temperature-high"></i>
+
+            </div>
+
+            <h1>Temperature Converter</h1>
+
+            <p>
+                Convert instantly between multiple temperature scales.
+            </p>
+
+        </div>
+
+        <!-- Converter -->
+
+        <div class="converter">
+
+            <!-- Celsius -->
+
+            <div class="input-group">
+
+                <label>
+
+                    <i class="fas fa-fire"></i>
+
+                    Celsius (°C)
+
+                </label>
+
+                <input
+                    type="number"
+                    id="celsius"
+                    value="0"
+                    placeholder="Enter Celsius">
+
+            </div>
+
+            <!-- Fahrenheit -->
+
+            <div class="input-group">
+
+                <label>
+
+                    <i class="fas fa-sun"></i>
+
+                    Fahrenheit (°F)
+
+                </label>
+
+                <input
+                    type="number"
+                    id="fahrenheit"
+                    value="32"
+                    placeholder="Enter Fahrenheit">
+
+            </div>
+
+            <!-- Kelvin -->
+
+            <div class="input-group">
+
+                <label>
+
+                    <i class="fas fa-snowflake"></i>
+
+                    Kelvin (K)
+
+                </label>
+
+                <input
+                    type="number"
+                    id="kelvin"
+                    value="273.15"
+                    placeholder="Enter Kelvin">
+
+            </div>
+
+            <!-- Rankine -->
+
+            <div class="input-group">
+
+                <label>
+
+                    <i class="fas fa-chart-line"></i>
+
+                    Rankine (°R)
+
+                </label>
+
+                <input
+                    type="number"
+                    id="rankine"
+                    placeholder="Rankine">
+
+            </div>
+
+            <!-- Réaumur -->
+
+            <div class="input-group">
+
+                <label>
+
+                    <i class="fas fa-water"></i>
+
+                    Réaumur (°Ré)
+
+                </label>
+
+                <input
+                    type="number"
+                    id="reaumur"
+                    placeholder="Réaumur">
+
+            </div>
+
+            <!-- Delisle -->
+
+            <div class="input-group">
+
+                <label>
+
+                    <i class="fas fa-icicles"></i>
+
+                    Delisle (°De)
+
+                </label>
+
+                <input
+                    type="number"
+                    id="delisle"
+                    placeholder="Delisle">
+
+            </div>
+
+            <!-- Newton -->
+
+            <div class="input-group">
+
+                <label>
+
+                    <i class="fas fa-atom"></i>
+
+                    Newton (°N)
+
+                </label>
+
+                <input
+                    type="number"
+                    id="newton"
+                    placeholder="Newton">
+
+            </div>
+
+            <!-- Rømer -->
+
+            <div class="input-group">
+
+                <label>
+
+                    <i class="fas fa-globe"></i>
+
+                    Rømer (°Rø)
+
+                </label>
+
+                <input
+                    type="number"
+                    id="romer"
+                    placeholder="Rømer">
+
+            </div>
+
+        </div>
+
+        <!-- Buttons -->
+
+        <div class="buttons">
+
+            <button id="resetBtn">
+
+                <i class="fas fa-rotate-left"></i>
+
+                Reset
+
+            </button>
+
+            <button id="copyBtn">
+
+                <i class="fas fa-copy"></i>
+
+                Copy Values
+
+            </button>
+
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+
+    <footer>
+
+        Made with ❤️ by
+
+        <a
+            href="https://github.com/probal2005"
+            target="_blank">
+
+            Probal Dhali
+
+        </a>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

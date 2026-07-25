@@ -1,0 +1,328 @@
+# ✅ Modern Todo App
+
+A modern, responsive, and feature-rich **Todo Application** built using **HTML, CSS, and JavaScript**. Organize your daily tasks with a beautiful Glassmorphism interface, task priorities, live search, filters, local storage support, and productivity-focused features.
+
+![HTML](https://img.shields.io/badge/HTML-5-orange?style=for-the-badge&logo=html5)
+![CSS](https://img.shields.io/badge/CSS-3-blue?style=for-the-badge&logo=css3)
+![JavaScript](https://img.shields.io/badge/JavaScript-ES6-yellow?style=for-the-badge&logo=javascript)
+![Responsive](https://img.shields.io/badge/Responsive-Yes-success?style=for-the-badge)
+![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
+
+---
+
+# 📸 Preview
+
+> Add your project screenshot here.
+
+```text
+preview.png
+```
+
+---
+
+# ✨ Features
+
+- ✅ Add new tasks
+- ✏️ Edit existing tasks
+- 🗑 Delete individual tasks
+- ✔ Mark tasks as completed
+- 📋 View task statistics
+- 🔍 Live search
+- 📂 Filter tasks
+- 🟢🟡🔴 Priority levels
+- 📅 Creation date & time
+- 💾 Local Storage support
+- 🧹 Clear completed tasks
+- 🗑 Clear all tasks
+- 💎 Glassmorphism UI
+- 🌈 Animated background
+- 📱 Fully responsive
+- ⌨️ Keyboard shortcuts
+- ❤️ Beautiful modern interface
+
+---
+
+# 🚀 Live Features
+
+### ✅ Task Management
+
+- Add Tasks
+- Edit Tasks
+- Delete Tasks
+- Complete / Uncomplete Tasks
+
+### 🔍 Search
+
+Search tasks instantly while typing.
+
+### 📂 Filters
+
+- All
+- Pending
+- Completed
+
+### 📊 Dashboard
+
+Shows
+
+- Total Tasks
+- Pending Tasks
+- Completed Tasks
+
+### 🎯 Priority Levels
+
+- 🟢 Low
+- 🟡 Medium
+- 🔴 High
+
+### 💾 Storage
+
+All tasks are automatically saved in your browser using **Local Storage**.
+
+---
+
+# 🛠 Technologies Used
+
+- HTML5
+- CSS3
+- JavaScript (ES6)
+- Local Storage API
+- Font Awesome
+- Google Fonts
+
+---
+
+# 📂 Project Structure
+
+```text
+Modern-Todo-App/
+│
+├── index.html
+├── style.css
+├── script.js
+├── assets/
+│   └── fav.ico
+├── preview.png
+└── README.md
+```
+
+---
+
+# 🚀 Getting Started
+
+## Clone Repository
+
+```bash
+git clone https://github.com/probal2005/Modern-Todo-App.git
+```
+
+## Open Project
+
+Simply open
+
+```text
+index.html
+```
+
+in your favorite browser.
+
+No installation required.
+
+---
+
+# 📖 How to Use
+
+### ➕
+
+Type your task
+
+Choose priority
+
+Click **+**
+
+or press
+
+```text
+Ctrl + Enter
+```
+
+---
+
+### ✔ Complete
+
+Click the checkbox.
+
+---
+
+### ✏ Edit
+
+Click the blue edit button.
+
+---
+
+### 🗑 Delete
+
+Click the red delete button.
+
+---
+
+### 🔎 Search
+
+Use the search box to instantly filter tasks.
+
+---
+
+### 📂 Filter
+
+Choose
+
+- All
+- Pending
+- Completed
+
+---
+
+### 🧹 Clear Completed
+
+Removes only completed tasks.
+
+---
+
+### 🗑 Clear All
+
+Deletes every task.
+
+---
+
+# ⌨️ Keyboard Shortcuts
+
+| Shortcut | Action |
+|-----------|--------|
+| Ctrl + Enter | Add Task |
+
+---
+
+# 🎯 Project Highlights
+
+- 💎 Modern Glassmorphism Design
+- 🌈 Animated Gradient Background
+- 📱 Fully Responsive
+- ✨ Smooth Animations
+- 📊 Live Statistics
+- 🔍 Instant Search
+- 📂 Smart Filters
+- 🟢 Priority Badges
+- 📅 Timestamp for Every Task
+- 💾 Local Storage Support
+- 🚀 Clean JavaScript Architecture
+
+---
+
+# 💡 Future Improvements
+
+- ⭐ Favorite Tasks
+- 📌 Pin Important Tasks
+- 🗓 Due Dates
+- ⏰ Reminder Notifications
+- 🌙 Dark / Light Mode
+- 👥 Multiple Lists
+- 🏷 Categories
+- 🎨 Custom Themes
+- 📤 Export Tasks
+- 📥 Import Tasks
+- ☁ Cloud Sync
+- 📊 Productivity Analytics
+- 🔄 Drag & Drop Task Sorting
+
+---
+
+# 🤝 Contributing
+
+Contributions are welcome!
+
+1. Fork the repository.
+
+2. Create a feature branch.
+
+```bash
+git checkout -b feature/NewFeature
+```
+
+3. Commit your changes.
+
+```bash
+git commit -m "Added new feature"
+```
+
+4. Push to GitHub.
+
+```bash
+git push origin feature/NewFeature
+```
+
+5. Open a Pull Request.
+
+---
+
+# 👨‍💻 Author
+
+## **Probal Dhali**
+
+💼 Frontend Developer | JavaScript Enthusiast
+
+🌐 GitHub
+
+https://github.com/probal2005
+
+---
+
+# ⭐ Support
+
+If you enjoyed this project, please consider giving it a ⭐ **Star** on GitHub.
+
+Your support motivates future improvements and more open-source projects.
+
+---
+
+# 📄 License
+
+This project is licensed under the **MIT License**.
+
+---
+
+# 🙌 Acknowledgements
+
+- Google Fonts
+- Font Awesome
+- MDN Web Docs
+- JavaScript ES6
+- Local Storage API
+- Glassmorphism UI Inspiration
+
+---
+
+# 📚 Learning Outcomes
+
+This project demonstrates:
+
+- DOM Manipulation
+- Event Handling
+- Local Storage
+- CRUD Operations
+- Array Methods
+- Search & Filtering
+- Dynamic Rendering
+- Responsive Design
+- CSS Grid & Flexbox
+- Modern JavaScript (ES6)
+- UI/UX Design Principles
+
+---
+
+# ❤️ Credits
+
+Designed and Developed with ❤️ by **Probal Dhali**
+
+If this project helped you or inspired you, don't forget to ⭐ the repository and share it with others.
+
+Happy Coding! 🚀
