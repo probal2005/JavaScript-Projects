@@ -58,7 +58,7 @@ fetch('./assets/js/projects.json')
         <p>${proj.desc}</p>
         <div class="btns">
             <a href="projects/${proj.meta}" class="btn"><i class="fas fa-eye"></i> View</a>
-            <a href="https://github.com/jigar-sable/JavaScript-Projects/tree/main/projects/${proj.meta}" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
+            <a href="https://github.com/probal2005/JavaScript-Projects/tree/main/projects/${proj.meta}" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
         </div>
         </div>
     </div>`;
@@ -75,7 +75,7 @@ var _CONTENT = [
     "Build a JavaScript Clock.",
     "Build a JavaScript Issue Tracker.",
     "Build a Password Generator.",
-    "Build a JavaScript Weather API.",
+    "Build a JavaScript Counter App.",
     "So Let's Get Started!"
 ];
 
