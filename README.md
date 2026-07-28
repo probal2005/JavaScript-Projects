@@ -6,6 +6,8 @@ This repository contains multiple beginner to advanced-level projects, including
 The goal of this repository is to improve JavaScript skills through practical projects and real-world implementations.
 
 ---
+[![Live Demo](https://img.shields.io/badge/Live-Demo-blue?style=for-the-badge)](https://probal2005.github.io/JavaScript-Projects/)
+---
 
 ## 🌟 Live Features
 
